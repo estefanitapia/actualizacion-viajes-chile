@@ -1,0 +1,85 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+/* DESTACADOS */
+.destacados {
+    padding: 5rem;
+}
+.card {
+    background: transparent;
+}
+.card img {
+    height: 15rem;
+    object-fit: cover;
+}
+.card-body {
+    color: v.$blanco;
+    padding-bottom: 3rem;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* TESTIMONIOS */
+.testimonies__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+@include m.tablet {
+    .testimonies {
+        display: flex;
+        flex-direction: row;
+        }
+}
+
+.testimonies__title {
+    text-align: center;
+    font-weight: 400;
+}
+
+.testimony__text {
+    color: v.$testimonios;
+    text-align: center;
+}
+
+.testimony {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: v.$blanco;
+    text-align: center;
+
+    &__img {
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            border-style: solid;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+}
+
+//MODAL
+.text-decoration-underline {
+    color: v.$agua;
+}
+
+

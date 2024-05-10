@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: v.$primario;
+    color:v.$blanco ;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: v.$blanco;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    color: v.$gris;
+    border-bottom: 3px solid;
+}

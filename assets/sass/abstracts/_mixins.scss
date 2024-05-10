@@ -1,0 +1,20 @@
+@use "variables" as v;
+
+/** Media Queries **/
+@mixin celular {
+    @media (min-width: v.$celular) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin transition($properties) {
+    transition-property: $properties;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
